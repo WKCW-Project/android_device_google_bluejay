@@ -25,6 +25,9 @@ TARGET_PREBUILT_KERNEL := device/google/bluejay-kernel/Image.lz4
 # Scudo
 PRODUCT_USE_SCUDO := true
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
 # Build necessary packages for vendor
 
 # Audio
