@@ -22,6 +22,9 @@ PRODUCT_PACKAGES := \
 # Kernel
 TARGET_PREBUILT_KERNEL := device/google/bluejay-kernel/Image.lz4
 
+# Scudo
+PRODUCT_USE_SCUDO := true
+
 # Build necessary packages for vendor
 
 # Audio
