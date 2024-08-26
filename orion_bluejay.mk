@@ -16,11 +16,26 @@ $(call inherit-product, device/google/bluejay/device-lineage.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 6a
-PRODUCT_NAME := lineage_bluejay
+PRODUCT_NAME := orion_bluejay
+
+# Gapps
+TARGET_STOCK_GAPPS := true
+BUILD_GOOGLE_CONTACTS := true
+BUILD_GOOGLE_DIALER := true
+BUILD_GOOGLE_MESSAGE := true
+
+# OrionOS Flags
+ORION_MAINTAINER := rmdn.
+ORION_MAINTAINER_LINK := https://t.me/ramaadni
+ORION_BUILD_TYPE := OFFICIAL
+ORION_GAPPS := true
+TARGET_ENABLE_BLUR := false
+TARGET_HAS_UDFPS := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=bluejay \
